@@ -13,15 +13,15 @@ Gem::Specification.new do |s|
   s.description   = "TicTacToe game with somewhat unbeatable AI"
   s.homepage      = "https://github.com/tracypholmes/tictactoe_tracypholmes"
   s.license       = "MIT"
+  s.post_install_message = "Thanks for installing!"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
 
-  s.files   = `git ls-files -z`.split("\x0").reject do |f|
-    f.match(%r{^(test|s|features)/})
-  end
-  s.files = Dir['lib/**/*.rb']
-  s.bindir        = "exe"
+  # s.files   = `git ls-files -z`.split("\x0").reject do |f| f.match(%r{^(test|s|features)/})
+  # end
+  s.files = Dir['lib/*.rb'] + Dir['bin/*']
+  s.bindir        = 'bin'
   s.executables   << 'tictactoe_tracypholmes'
   s.require_paths = ["lib"]
 
