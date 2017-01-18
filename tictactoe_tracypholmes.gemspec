@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.email         = ["tracyholmes@gmail.com"]
 
   s.summary       = "TictTacToe with AI"
-  s.description   = "TicTacToe game with somewhat unbeatable AI"
+  s.description   = "TicTacToe game with somewhat unbeatable AI. run `tictactoe_tracypholmes` to play."
   s.homepage      = "https://github.com/tracypholmes/tictactoe_tracypholmes"
   s.license       = "MIT"
   s.post_install_message = "Thanks for installing!"
@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
   # end
   s.files = Dir['lib/*.rb'] + Dir['bin/*']
   s.bindir        = 'bin'
-  s.executables   << 'tictactoe_tracypholmes'
+  s.executables   = ['tictactoe_tracypholmes']
   s.require_paths = ["lib"]
 
   s.add_development_dependency "bundler", "~> 1.13"
